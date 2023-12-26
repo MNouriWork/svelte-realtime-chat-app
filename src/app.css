@@ -1,0 +1,163 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  background: #f0f1f2;
+}
+
+.App {
+
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 90%;
+  max-width: 500px;
+  max-height: 600px;
+  background: #fff;
+  border: 1px solid #eee;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.05);
+}
+
+.App .login-form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.App .login-form button {
+  padding: 10px;
+  background: #fff;
+  color: #111;
+  font-size: 16px;
+  cursor: pointer;
+  outline: none;
+  border-radius: 6px;
+  border: 1px solid #bbb;
+}
+
+.App .login-form button i.fa {
+  padding-right: 10px;
+  border-right: 1px solid #ddd;
+  color: #555555;
+}
+
+.Chatroom {
+  height: 100%;
+}
+
+.Chatroom .header {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.Chatroom .logo {
+  font-size: 15px;
+  font-weight: 600;
+  color: #111;
+}
+
+.Chatroom .header button {
+  background: transparent;
+  padding: 5px 10px;
+  border: 1px solid #ddd;
+  border-radius: 7px;
+  color: #555;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.Chatroom form {
+  display: flex;
+  width: 100%;
+  height: 40px;
+  border-top: 1px solid #ddd;
+}
+
+.Chatroom form input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  color: #111;
+}
+
+.Chatroom form button {
+  padding: 10px;
+  font-size: 20px;
+  color: #555;
+  background: #b9dad7;
+  border-radius: 7px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.Chatroom .messages {
+  width: 100%;
+  height: calc(100% - 80px);
+  padding: 10px;
+  overflow-y: auto;
+}
+
+.Chatroom .messages::-webkit-scrollbar {
+  width: 6px;
+  background: #fff;
+}
+
+.Chatroom .messages::-webkit-scrollbar-thumb {
+  width: 6px;
+  background: #888;
+}
+
+.Chatroom .messages .message {
+  margin: 10px 0px;
+  display: flex;
+}
+
+.Chatroom .messages .my-message {
+  justify-content: flex-end;
+}
+
+
+.Chatroom .messages .message .avatar {
+  width: 30px;
+  height: 30px;
+  align-self: center;
+  margin-right: 8px;
+  margin-left: 8px;
+}
+
+.Chatroom .messages .message .text {
+  padding: 10px;
+  background: #a16793;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  max-width: fit-content;
+  flex: 1;
+  border-radius: 5px;
+}
+
+.Chatroom .message .avatar img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+
+.Chatroom .messages .my-message .text {
+  background: #308671;
+  color: #fff;
+}
